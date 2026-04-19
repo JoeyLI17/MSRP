@@ -1,0 +1,27 @@
+{
+  "name": "bmw-msrp",
+  "description": "Fetches all current BMW China (bmw.com.cn) MSRP prices by model and trim. Returns prices in 万元.",
+  "version": "1.0.0",
+  "author": "MSRP Skill",
+  "runtime": "node",
+  "entry": "skill.js",
+  "input_schema": {
+    "type": "object",
+    "properties": {},
+    "required": [],
+    "description": "No inputs required. Scrapes live data from bmw.com.cn."
+  },
+  "output_schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "model":      { "type": "string",  "description": "Model name in Chinese, e.g. BMW 3系" },
+        "trim":       { "type": "string",  "description": "Trim name in Chinese, e.g. 325Li M运动套装" },
+        "priceYuan":  { "type": "number",  "description": "MSRP in 元, e.g. 278000" },
+        "priceWan":   { "type": "number",  "description": "MSRP in 万元, e.g. 27.8" }
+      },
+      "required": ["model", "trim", "priceYuan", "priceWan"]
+    }
+  }
+}
