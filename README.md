@@ -6,8 +6,8 @@ Get MSRP of cars as agent skills.
 
 Each OEM has its own skill folder. The first OEM skills are:
 
-- `/home/runner/work/MSRP/MSRP/skills/BMW`
-- `/home/runner/work/MSRP/MSRP/skills/Benz`
+- `skills/BMW`
+- `skills/Benz`
 
 Both skills default to Chinese official web pages when fetching MSRP.
 
