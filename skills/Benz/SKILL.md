@@ -15,8 +15,8 @@ Use this skill to fetch Mercedes-Benz MSRP data with a default focus on Mercedes
 ## Run
 
 ```bash
-python /home/runner/work/MSRP/MSRP/skills/Benz/fetch_price_dynamic.py
-python /home/runner/work/MSRP/MSRP/skills/Benz/fetch_price_dynamic.py --url "https://www.mercedes-benz.com.cn/passengercars/models/suv/gla/overview.html"
+python skills/Benz/fetch_price_dynamic.py
+python skills/Benz/fetch_price_dynamic.py --url "https://www.mercedes-benz.com.cn/passengercars/models/suv/gla/overview.html"
 ```
 
 If Playwright is not installed:

@@ -15,6 +15,6 @@ Use this skill to fetch BMW MSRP data with a default focus on BMW China official
 ## Run
 
 ```bash
-python /home/runner/work/MSRP/MSRP/skills/BMW/fetch_price.py
-python /home/runner/work/MSRP/MSRP/skills/BMW/fetch_price.py --url "https://www.bmw.com.cn/zh/all-models/5-series/sedan/2024/overview.html"
+python skills/BMW/fetch_price.py
+python skills/BMW/fetch_price.py --url "https://www.bmw.com.cn/zh/all-models/5-series/sedan/2024/overview.html"
 ```

@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from urllib.request import Request, urlopen
 
 DEFAULT_URL = "https://www.bmw.com.cn/zh/all-models.html"
@@ -45,4 +46,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())
