@@ -7,7 +7,7 @@ import re
 import sys
 
 DEFAULT_URL = "https://www.mercedes-benz.com.cn/passengercars.html"
-PRICE_PATTERN = re.compile(r"(?:¥|￥|RMB\s*)\s*\d[\d,]*(?:\.\d{1,2})?\s*(?:万|元)?")
+PRICE_PATTERN = re.compile(r"(?:¥|￥|RMB\s*)\s*\d[\d,]*(?:\.\d{1,2})?\s*(?:万|元)")
 
 
 def extract_prices(text: str) -> list[str]:

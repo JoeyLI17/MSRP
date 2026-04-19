@@ -8,7 +8,7 @@ import sys
 from urllib.request import Request, urlopen
 
 DEFAULT_URL = "https://www.bmw.com.cn/zh/all-models.html"
-PRICE_PATTERN = re.compile(r"(?:¥|￥|RMB\s*)\s*\d[\d,]*(?:\.\d{1,2})?\s*(?:万|元)?")
+PRICE_PATTERN = re.compile(r"(?:¥|￥|RMB\s*)\s*\d[\d,]*(?:\.\d{1,2})?\s*(?:万|元)")
 
 
 def extract_prices(text: str) -> list[str]:
