@@ -8,6 +8,8 @@ __pycache__/
 .claude
 .playwright-mcp
 CLAUDE.md
+.vscode
+
 
 # results
 data
