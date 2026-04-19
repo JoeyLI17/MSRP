@@ -1,0 +1,27 @@
+{
+  "name": "mercedes-msrp",
+  "description": "Fetches all current Mercedes-Benz China (mercedes-benz.com.cn) MSRP prices by model and trim. Returns prices in 万元.",
+  "version": "1.0.0",
+  "author": "MSRP Skill",
+  "runtime": "node",
+  "entry": "skill.js",
+  "input_schema": {
+    "type": "object",
+    "properties": {},
+    "required": [],
+    "description": "No inputs required. Fetches live data from the official Mercedes-Benz China bodystyle API."
+  },
+  "output_schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "model":      { "type": "string", "description": "Model class name in Chinese, e.g. C级" },
+        "trim":       { "type": "string", "description": "Full trim name in Chinese, e.g. 长轴距C级轿车" },
+        "priceYuan":  { "type": "number", "description": "MSRP in 元, e.g. 324600" },
+        "priceWan":   { "type": "number", "description": "MSRP in 万元, e.g. 32.46" }
+      },
+      "required": ["model", "trim", "priceYuan", "priceWan"]
+    }
+  }
+}
